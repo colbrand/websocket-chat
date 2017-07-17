@@ -3,7 +3,6 @@ var wSocket = require('ws');
 var path = require('path');
 
 var chatui = require("fs").readFileSync("./chatui.html");
-// var loader = require("fs").readFileSync("./app/chat.client.js");
 
 var httpServer = new http.createServer((req, res) => {
     if (req.url === "/") {
@@ -27,17 +26,6 @@ var httpServer = new http.createServer((req, res) => {
         });
     }
 });
-
-// else if (req.url === "/app/chat.client.js") {
-//     res.writeHead(200, { "Content-Type": "text/javascript" });
-//     res.write(loader);
-//     res.end();
-// }
-// else {
-//     res.writeHead(404);
-//     res.end();
-// }
-
 
 var errRes = function (res) {
     res.writeHead(404);
