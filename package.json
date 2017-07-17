@@ -1,0 +1,12 @@
+{
+    "devDependencies": {
+        "ws": "3.0.0"
+    },
+    "dependencies": {
+        "systemjs": "0.20.15",
+        "bootstrap": "4.0.0-alpha.4"
+    },
+    "scripts": {
+        "start": "node app/chat.server.js"
+    }
+}
